@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/base-style.css">
+    <link rel="stylesheet" type="text/css" href="css/selectors.css">
     <title>The Code Review</title>
 </head>
 <body>
+<div id="container">
     <form action="index.html" method="post">
         <h1>Signup for our newsletter</h1>
         <h6>Get the latest news on how your code is doing right in your inbox</h6>
@@ -17,10 +20,10 @@
         <fieldset>
             <legend>Contact Information</legend>
             <label for="name">Full Name</label><br>
-            <input type="text" id="name" name="user_name"><br>
+            <input type="text" id="name" name="user_name" placeholder="Required"><br>
 
             <label for="mail">Email Address</label><br>
-            <input type="email" id="mail" name="user_email"><br>
+            <input type="email" id="mail" name="user_email" placeholder="Required"><br>
 
             <label for="phone">Phone Number</label><br>
             <input type="phone" id="phone" name="user_phonenumber"><br>
@@ -32,7 +35,7 @@
             <input type="city" id="city" name="user_city"><br>
 
             <label for="state">State</label><br>
-            <select id="state" name="user_state">
+            <select id="state" name="user_state" placeholder="Choose State">
                 <optgroup  label="A">
                 <option value="USA States">Alabama</option>
                 <option value="USA States">Alaska</option>
@@ -144,6 +147,8 @@
                 <option value="USA States">Wisconsin</option>
                 <option value="USA States">Wyoming</option>
                 </optgroup>
+
+                
             </select><br>
 
             <label for="zip">Zip Code</label><br>
@@ -151,7 +156,8 @@
         
         
         </fieldset>
-        
+</div>     
+<div id="container">  
         <fieldset>
             <legend>Newsletter</legend>
 
@@ -167,14 +173,14 @@
 
 
             <label for="other">Other topics you'd like to hear about</label><br>
-            <textarea id="other" name="user_othertopics"></textarea>
-
+            <textarea id="other" name="user_othertopics"></textarea><br>
+            <button type="submit">Sign Up</button>
         </fieldset>
 
-        <button type="submit">Sign Up</button>
+        
 
 
     </form>
-    
+</div>    
 </body>
 </html>

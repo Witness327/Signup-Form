@@ -1,0 +1,59 @@
+
+
+input[type] {
+    background: lightgray;
+}
+
+input[placeholder="Required"] {
+    text-align: right;
+}
+
+select[id="state"] {
+    background: lightgray;
+}
+
+textarea[id="other"] {
+    background: lightgray;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #52bab3;
+}
+
+div[id="container"] {
+    max-width: 500px;
+    margin: auto;
+} 
+
+button[type="submit"] {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #52bab3;
+    color: white;
+    width: 100%;
+}
+
+input[type="checkbox"]:checked + label{
+    font-weight: bold;
+}
+
+input[type="radio"]:checked + label{
+    font-weight: bold;
+}
+
+/* @media (min-width: 769px) {
+    .inln{
+        width: auto;
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    br {
+        display: inline-block;
+        width: auto;
+    }
+} */
+
