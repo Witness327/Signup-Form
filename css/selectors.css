@@ -1,12 +1,63 @@
 
+body {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1 {
+    text-align: center;    
+    color: rgba(6, 12, 31, 0.815);
+}
+
+h2 {
+    text-align: center;
+    background: rgba(6, 12, 31, 0.815);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%; 
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    color: gray;
+    font-weight: 300;
+}
+
+.primary legend {
+    font-weight: bold;
+    font-size: 1.7em;
+    color: rgba(6, 12, 31, 0.815);
+}
+
+.secondary legend {
+    font-weight: bold;
+    font-size: 1.7em;
+    color: rgba(6, 12, 31, 0.815);
+}
+
+h5 {
+    text-align: center;
+    color: gray;
+    font-style: italic;
+}
+
+::placeholder {
+    font-style: italic;
+    text-align: right;
+    opacity: 0.5;
+}
 
 input[type] {
     background: lightgray;
 }
 
-input[placeholder="Required"] {
+/* input[placeholder="Required"] {
     text-align: right;
-}
+} */
 
 select[id="state"] {
     background: lightgray;
@@ -19,7 +70,7 @@ textarea[id="other"] {
 input:focus,
 textarea:focus,
 select:focus {
-    border-color: #52bab3;
+    border-color: rgb(19, 19, 112);
 }
 
 div[id="container"] {
@@ -42,6 +93,58 @@ input[type="checkbox"]:checked + label{
 
 input[type="radio"]:checked + label{
     font-weight: bold;
+}
+
+
+fieldset {
+    border: none;
+}
+
+
+
+
+input[type="text"],
+input[type="address"],
+input[type="email"],
+input[type="phone"],
+input[type="city"],
+input[type="state"],
+input[type="zip"],
+textarea,
+select {
+  background: #e8eeefd3;
+  /* border: transparent; */
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 95%;
+  background-color: #e8eeefd3;
+  color: black;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.primary {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} 
+
+
+label {
+    color: rgba(6, 12, 31, 0.815);
+}
+
+/* .secondary {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    display: block;
 }
 
 /* @media (min-width: 769px) {
