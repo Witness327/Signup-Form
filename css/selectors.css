@@ -6,6 +6,7 @@ body {
 }
 
 h1 {
+    
     text-align: center;    
     color: rgba(6, 12, 31, 0.815);
     letter-spacing: -2px;
@@ -28,19 +29,30 @@ h3 {
     font-weight: 300;
     padding: 0px 15px 5px;
     margin-top: -10px;
+    padding-bottom: 35px;
+    margin-bottom: 2px;
     letter-spacing: 0px;
+    border-bottom:  solid 4px black;
     
 }
 
 .primary legend {
+    width: 100%;
+    border-top: solid 2px black;
+    padding-top: 30px;
     font-weight: bold;
     font-size: 1.7em;
+    letter-spacing: -1px;
     color: rgba(6, 12, 31, 0.815);
 }
 
 .secondary legend {
+    padding-top: 25px;
+    
+    width: 100%;
     font-weight: bold;
     font-size: 1.7em;
+    letter-spacing: -1px;
     color: rgba(6, 12, 31, 0.815);
 }
 
@@ -79,8 +91,12 @@ select:focus {
 }
 
 div[id="container"] {
-    max-width: 500px;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+    /* max-width: 250px;
+    margin: auto; */
 } 
 
 button[type="submit"] {
@@ -103,10 +119,25 @@ input[type="radio"]:checked + label{
 
 fieldset {
     border: none;
+    width: 100%;
 }
 
-
-
+input[type="zip"] {
+    background: #e8eeefd3;
+    /* border: transparent; */
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    
+    background-color: #e8eeefd3;
+    color: black;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    width: 30%;
+  }
 
 input[type="text"],
 input[type="address"],
@@ -114,7 +145,6 @@ input[type="email"],
 input[type="phone"],
 input[type="city"],
 input[type="state"],
-input[type="zip"],
 textarea,
 select {
   background: #e8eeefd3;
@@ -124,19 +154,28 @@ select {
   margin: 0;
   outline: 0;
   padding: 15px;
-  width: 95%;
+  
   background-color: #e8eeefd3;
   color: black;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
   border-radius: 5px;
+  width: 90%;
 }
+
+
 
 .primary {
     display: flex;
     flex-direction: column;
     width: 100%;
+    border-bottom: solid 2px black;
 } 
+
+.secondary {
+    /* display: flex; */
+    /* align-items: left; */
+}
 
 
 label {

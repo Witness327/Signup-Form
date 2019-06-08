@@ -38,7 +38,8 @@
             <input type="city" id="city" name="user_city"><br>
 
             <label for="state">State</label><br>
-            <select id="state" name="user_state" placeholder="Choose State">
+            <select id="state" name="user_state">
+                <option default>Choose State</option>
                 <optgroup  label="A">
                 <option value="USA States">Alabama</option>
                 <option value="USA States">Alaska</option>
@@ -162,20 +163,20 @@
 </div>     
 <div id="container">  
         <fieldset class="secondary">
-            <legend>Newsletter</legend>
+            <legend>Newsletter</legend><br>
 
-            <label>Select the newsletters you would like to receive</label><br>
-            <input type="checkbox" id="html_news" value="html_news" name="newsletter"><label for="html_news">HTML News</label><br>
-            <input type="checkbox" id="css_news" value="css_news" name="newsletter"><label for="css_news">CSS News</label><br>
-            <input type="checkbox" id="javascript" value="javascript" name="newsletter"><label for="javascript">Javascript News</label><br>
+            <label>Select the newsletters you would like to receive</label><br><br>
+            <input type="checkbox" id="html_news" value="html_news" name="newsletter"><label for="html_news">HTML News</label><br><br>
+            <input type="checkbox" id="css_news" value="css_news" name="newsletter"><label for="css_news">CSS News</label><br><br>
+            <input type="checkbox" id="javascript" value="javascript" name="newsletter"><label for="javascript">Javascript News</label><br><br>
 
            
-            <label>Newsletter format</label><br>
-            <input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label><br>
-            <input type="radio" id="plain_text" value="text" name="user_format"><label for="plain_text">Plain text</label><br>
+            <label>Newsletter format</label><br><br>
+            <input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label><br><br>
+            <input type="radio" id="plain_text" value="text" name="user_format"><label for="plain_text">Plain text</label><br><br>
 
 
-            <label for="other">Other topics you'd like to hear about</label><br>
+            <label for="other">Other topics you'd like to hear about</label><br><br>
             <textarea id="other" name="user_othertopics"></textarea><br>
             <button type="submit">Sign Up</button>
         </fieldset>
