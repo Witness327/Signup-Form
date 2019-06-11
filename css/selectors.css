@@ -1,12 +1,12 @@
 
+
 body {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 
 h1 {
-    
+    margin-top: 5px;   
     text-align: center;    
     color: rgba(6, 12, 31, 0.815);
     letter-spacing: -2px;
@@ -29,11 +29,32 @@ h3 {
     font-weight: 300;
     padding: 0px 15px 5px;
     margin-top: -10px;
+    
     padding-bottom: 35px;
     margin-bottom: 2px;
     letter-spacing: 0px;
     border-bottom:  solid 4px black;
-    
+    /* padding-right: 5px;
+    width: 99%;
+    justify-content: center; */
+}
+
+fieldset {    
+    border: none;
+    width: 100%;
+}
+
+.primary fieldset {
+    padding-right: 5px;
+    /* width: 100%; */
+    /* justify-content: center; */
+}
+
+.secondary fieldset{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
 }
 
 .primary legend {
@@ -47,8 +68,7 @@ h3 {
 }
 
 .secondary legend {
-    padding-top: 25px;
-    
+    padding-top: 25px;    
     width: 100%;
     font-weight: bold;
     font-size: 1.7em;
@@ -56,11 +76,6 @@ h3 {
     color: rgba(6, 12, 31, 0.815);
 }
 
-h5 {
-    text-align: center;
-    color: gray;
-    font-style: italic;
-}
 
 ::placeholder {
     font-style: italic;
@@ -69,19 +84,20 @@ h5 {
 }
 
 input[type] {
-    background: lightgray;
+    /* background: lightgray; */
 }
-
-/* input[placeholder="Required"] {
-    text-align: right;
-} */
 
 select[id="state"] {
     background: lightgray;
+    opacity: 0.4;    
 }
 
 textarea[id="other"] {
     background: lightgray;
+    opacity: 0.4;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
 
 input:focus,
@@ -91,21 +107,25 @@ select:focus {
 }
 
 div[id="container"] {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    
-    /* max-width: 250px;
-    margin: auto; */
+    display: flex; 
+    align-items: left; 
+    justify-content: center;
+    width: 100%;
 } 
 
 button[type="submit"] {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
     font-size: 1.5em;
     padding: 10px 20px;
     cursor: pointer;
     background-color: #52bab3;
     color: white;
     width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;    
 }
 
 input[type="checkbox"]:checked + label{
@@ -113,31 +133,27 @@ input[type="checkbox"]:checked + label{
 }
 
 input[type="radio"]:checked + label{
-    font-weight: bold;
-}
-
-
-fieldset {
-    border: none;
-    width: 100%;
+    font-weight: bold;    
 }
 
 input[type="zip"] {
+    display: flex; 
+    align-items: left; 
+    justify-content: left;    
     background: #e8eeefd3;
     /* border: transparent; */
     font-size: 16px;
     height: auto;
-    margin: 0;
+    /* margin: 0; */
     outline: 0;
-    padding: 15px;
-    
+    padding: 15px;    
     background-color: #e8eeefd3;
     color: black;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
     border-radius: 5px;
     width: 30%;
-  }
+}
 
 input[type="text"],
 input[type="address"],
@@ -147,60 +163,140 @@ input[type="city"],
 input[type="state"],
 textarea,
 select {
-  background: #e8eeefd3;
-  /* border: transparent; */
-  font-size: 16px;
-  height: auto;
-  margin: 0;
-  outline: 0;
-  padding: 15px;
-  
-  background-color: #e8eeefd3;
-  color: black;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
-  border-radius: 5px;
-  width: 90%;
+    display: flex; 
+    align-items: left; 
+    justify-content: left;
+    background: #e8eeefd3;
+    /* border: transparent; */
+    font-size: 16px;
+    height: auto;
+    /* margin-bottom: 0; */
+    outline: 0;
+    padding: 15px;
+    background-color: #e8eeefd3;
+    color: black;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 6px;
+    margin-top: -6px;
+    border-radius: 5px;
+  /* width: 100%; */
 }
+
+/* select optgroup {
+    background: #e8eeefd3;
+    background-color: #e8eeefd3;
+    color: black;
+}
+
+option:not(:checked) { 
+    background: #e8eeefd3;
+    background-color: #e8eeefd3;
+}
+
+select option { 
+    background: #e8eeefd3;
+    background-color: #e8eeefd3;
+} */
 
 
 
 .primary {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    border-bottom: solid 2px black;
+    /* width: 100%; */
+    border-bottom: solid 2px black;    
 } 
 
-.secondary {
-    /* display: flex; */
-    /* align-items: left; */
+.primary label {
+    display: flex;
+    justify-content: left;    
 }
 
-
-label {
+label {    
     color: rgba(6, 12, 31, 0.815);
 }
 
-/* .secondary {
+/* ---------COPYRIGHT---------- */
+h5 {
+    margin-top: 10px;
+    text-align: center;
+    color: gray;
+    font-style: italic;
+    opacity: 0.5;
+}
+/* ---------COPYRIGHT---------- */
+
+
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;    
+}
+
+
+
+
+/* /* .secondary {
     display: flex;
     flex-direction: row;
 }
 
 label {
     display: block;
-}
+} */
 
-/* @media (min-width: 769px) {
+
+@media (min-width: 760px) {
     .inln{
-        width: auto;
-        display: inline-block;
-        margin-left: 20px;
+        /* width: auto; */
+        /* display: inline-block; */
+        /* margin-left: 20px; */
     }
 
     br {
-        display: inline-block;
-        width: auto;
-    }
+        /* display: inline-block; */
+        /* width: auto; */
+        /* display: none; */
+    } 
+
+    div[id="container"] {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 100%;  
+}
+
+button[type="submit"],
+textarea {
+    width:100%;
+}
+
+textarea {
+    display: flex;
+    flex-grow: 1;
+    
+}
+
+/* input[type="zip"] {    
+    display: flex;
+    align-items: left;
+    justify-content: center;  
+    width: 30%;
+}
+
+input[type="text"],
+input[type="address"],
+input[type="email"],
+input[type="phone"],
+input[type="city"],
+input[type="state"],
+textarea,
+select {
+    display: flex;
+    align-items: left;
+    justify-content: center; 
+  width: 90%;
 } */
+
+}
 
