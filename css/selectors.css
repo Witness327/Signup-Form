@@ -1,14 +1,16 @@
 
 
-body {
+/* body {
     display: flex;
     flex-direction: column;    
-}
+} */
 
 form {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    /* flex-grow:stretch;    */
     /* width: 100%; */
+    /* justify-content: center; */
 }
 
 h1 {
@@ -34,15 +36,15 @@ h3 {
     color: gray;
     font-weight: 300;
     padding: 0px 15px 5px;
-    margin-top: -10px;
-    
+    margin-top: -10px;    
     padding-bottom: 35px;
     margin-bottom: 2px;
     letter-spacing: 0px;
     border-bottom:  solid 4px black;
-    /* padding-right: 5px;
-    width: 99%;
-    justify-content: center; */
+    /* padding-right: 5px; */
+    /* width: 50%; */
+    /* justify-content: center; */
+    /* text-align: center; */
 }
 
 fieldset {    
@@ -58,7 +60,6 @@ fieldset {
 
 .secondary fieldset{
     display: flex;
-    align-items: left;
     justify-content: center;
     width: 100%;
 }
@@ -136,7 +137,6 @@ input[type="radio"]:checked + label{
 
 input[id="zip"] {
     display: flex; 
-    align-items: left; 
     justify-content: left;    
     background: #e8eeefd3;
     /* border: transparent; */
@@ -154,10 +154,8 @@ input[id="zip"] {
 }
 
 input[type="text"],
-input[type="tel"],
 input[type="email"],
 input[type="number"],
-input[type="city"],
 input[type="state"],
 textarea,
 select {
@@ -179,7 +177,7 @@ select {
 
 .primary {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: row; */
     /* width: 100%; */
     border-bottom: solid 2px black;    
 } 
@@ -211,9 +209,6 @@ input[type="radio"] {
     margin-right: 10px;    
 }
 
-
-
-
 /* /* .secondary {
     display: flex;
     flex-direction: row;
@@ -230,6 +225,12 @@ label {
         /* flex-direction: row;
         flex-grow: 1;
         justify-content: center; */
+    }
+
+    form {
+        /* display: flex;
+        flex-direction: column;     */
+        /* width: 50%; */
     }
 
     label{        
