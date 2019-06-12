@@ -5,6 +5,12 @@ body {
     flex-direction: column;    
 }
 
+form {
+    display: flex;
+    flex-direction: column;    
+    /* width: 100%; */
+}
+
 h1 {
     margin-top: 5px;   
     text-align: center;    
@@ -83,61 +89,41 @@ fieldset {
     opacity: 0.5;
 }
 
-input[type] {
-    /* background: lightgray; */
-}
-
-/* select[id="state"] {
-    background: lightgray;
-    opacity: 0.4;    
-} */
-
-textarea[id="other"] {
-    /* background: lightgray;
-    opacity: 0.4; */
+textarea[id="other"] {    
     display: flex; 
+    flex-direction: column; 
     align-items: center; 
-    justify-content: left;
-    display: flex; 
-    font-size: 1.5em;
-    /* padding: 10px 20px; */
-    /* cursor: pointer;
-    background-color: #52bab3; */
+    justify-content: left;    
+    font-size: 1.5em;   
     color: white;
-    width: 100%;
+    width: 95%;
     border-radius: 5px;
     /* border: none; */
     margin-top: 15px; 
-    color: black;
-    
+    color: black;    
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-    border-color: rgb(19, 19, 112);
+    border: 1px solid rgb(19, 19, 112);
+    /* border-color:  */
 }
-
-div[id="container"] {
-    /* display: flex; 
-    align-items: left; 
-    justify-content: center; */
-    /* width: 80%; */
-} 
 
 button[type="submit"] {
     display: flex; 
     align-items: center; 
     justify-content: center;
     font-size: 1.5em;
-    padding: 10px 20px;
+    padding: 20px 20px;
     cursor: pointer;
     background-color: #52bab3;
     color: white;
     width: 100%;
     border-radius: 5px;
     border: none;
-    margin-top: 15px;    
+    margin-top: 10px; 
+    margin-bottom: 20px;   
 }
 
 input[type="checkbox"]:checked + label{
@@ -148,7 +134,7 @@ input[type="radio"]:checked + label{
     font-weight: bold;    
 }
 
-input[type="zip"] {
+input[id="zip"] {
     display: flex; 
     align-items: left; 
     justify-content: left;    
@@ -157,7 +143,7 @@ input[type="zip"] {
     font-size: 16px;
     height: auto;
     /* margin: 0; */
-    outline: 0;
+    border: none;
     padding: 15px;    
     background-color: #e8eeefd3;
     color: black;
@@ -168,18 +154,19 @@ input[type="zip"] {
 }
 
 input[type="text"],
-input[type="address"],
+input[type="tel"],
 input[type="email"],
-input[type="phone"],
+input[type="number"],
 input[type="city"],
 input[type="state"],
 textarea,
 select {
+    display: flex;
     background: #e8eeefd3;
-    /* border: transparent; */
+    border: none;
     font-size: 16px;
     height: auto;
-    outline: 0;
+    /* outline: none; */
     padding: 15px;
     background-color: #e8eeefd3;
     color: black;
@@ -187,6 +174,7 @@ select {
     margin-bottom: 6px;
     margin-top: -6px;
     border-radius: 5px;
+    
 }
 
 .primary {
@@ -212,6 +200,7 @@ h5 {
     color: gray;
     font-style: italic;
     opacity: 0.5;
+    font-size: 1em;
 }
 /* ---------COPYRIGHT---------- */
 
@@ -236,11 +225,16 @@ label {
 
 
 @media (min-width: 760px) {
-    /* .inln{
-        width: auto;
-        display: inline-block;
-        margin-left: 20px;
-    } */
+    .flex-wrapper {
+        /* display: inline; */
+        /* flex-direction: row;
+        flex-grow: 1;
+        justify-content: center; */
+    }
+
+    label{        
+        margin-right: 0px;
+    }
 
     br {
         /* display: none; */
@@ -248,66 +242,19 @@ label {
         /* display: none; */
     } 
 
-    div[id="container"] {
+    div[id="container"],
+    div[id="container-2"] {
     display: flex;
-    align-items: left;
     justify-content: center;
-    width: 100%;  
-    /* flex-direction: column; */
-}
+    }
 
-button[type="submit"] {
-    /* display: flex; 
-    align-items: center; 
-    justify-content: center;
-    font-size: 1.5em;
-    padding: 10px 20px; */
+    button[type="submit"] {
     cursor: pointer;
-    /* background-color: #52bab3;
-    color: white;
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    margin-top: 15px;     */
-}
+    }
 
-.secondary {
-    width: 100%;
-}
-
-/* .secondary br {
-    display: none;
-} */
-
-textarea {
-    display: flex;
-    align-items: stretch;
-    /* flex-direction: row; */
-    width: 100%;
-    justify-content: space-around;
-    
-}
-
-/* input[type="zip"] {    
-    display: flex;
-    align-items: left;
-    justify-content: center;  
-    width: 30%;
-}
-
-input[type="text"],
-input[type="address"],
-input[type="email"],
-input[type="phone"],
-input[type="city"],
-input[type="state"],
-textarea,
-select {
-    display: flex;
-    align-items: left;
-    justify-content: center; 
-  width: 90%;
-} */
-
+fieldset {
+    /* display: inline; */
+    width: 50%;
+    }
 }
 
