@@ -47,7 +47,9 @@ h3 {
     /* text-align: center; */
 }
 
-fieldset {    
+fieldset { 
+    display: flex;
+    flex-direction: column;   
     border: none;
     /* width: 100%; */
 }
