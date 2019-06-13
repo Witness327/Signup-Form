@@ -76,6 +76,13 @@ form {
     /* justify-content: space-around; */
 }
 
+div[id="container"],
+    div[id="container-2"] {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    }
+
 fieldset { 
     border: none;
     /* display: flex;
@@ -113,7 +120,6 @@ fieldset {
     width: 100%;
     flex-direction: column;   
 }
-
 
 
 /* .primary label {
