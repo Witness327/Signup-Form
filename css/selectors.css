@@ -103,14 +103,17 @@ textarea[id="other"] {
     border-radius: 5px;
     /* border: none; */
     margin-top: 15px; 
-    color: black;    
+    color: black; 
+    box-shadow:none;
+    border-color:transparent;   
 }
 
 input:focus,
 textarea:focus,
 select:focus {
     border: 1px solid rgb(19, 19, 112);
-    /* border-color:  */
+    outline: none;
+    
 }
 
 button[type="submit"] {
@@ -126,7 +129,8 @@ button[type="submit"] {
     border-radius: 5px;
     border: none;
     margin-top: 10px; 
-    margin-bottom: 20px;   
+    margin-bottom: 20px; 
+    outline: none;  
 }
 
 input[type="checkbox"]:checked + label{
@@ -141,39 +145,36 @@ input[id="zip"] {
     display: flex; 
     justify-content: left;    
     background: #e8eeefd3;
-    /* border: transparent; */
     font-size: 16px;
-    height: auto;
-    /* margin: 0; */
-    border: none;
-    padding: 15px;    
-    background-color: #e8eeefd3;
+    height: auto;    
+    padding: 15px;
     color: black;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    /* box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset; */
     margin-bottom: 30px;
     border-radius: 5px;
     width: 30%;
+    box-shadow:none;
+    border-color:transparent;   
 }
 
 input[type="text"],
 input[type="email"],
 input[type="number"],
-input[type="state"],
 textarea,
 select {
     display: flex;
     background: #e8eeefd3;
-    border: none;
     font-size: 16px;
     height: auto;
-    /* outline: none; */
     padding: 15px;
     background-color: #e8eeefd3;
     color: black;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    /* box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset; */
     margin-bottom: 6px;
     margin-top: -6px;
     border-radius: 5px;
+    box-shadow:none;
+    border-color:transparent;   
     
 }
 
