@@ -89,8 +89,10 @@ form {
 } 
 
 .secondary {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    /* text-align: center; */
+    /* display: flex; */
+    /* justify-content: center; */
 } 
 
 ::placeholder {
@@ -104,7 +106,7 @@ form {
 textarea[id="other"] { 
     font-size: 1.5em;   
     color: white;
-    width: 95%;
+    width: 90%;
     border-radius: 5px;
     margin-top: 15px; 
     color: black; 
@@ -139,6 +141,7 @@ input[type="email"],
 input[type="number"],
 textarea,
 select {
+    /* width: 90%; DOUBLECHECK */
     display: flex;    
     background: #e8eeefd3;
     font-size: 16px;
@@ -175,6 +178,14 @@ label {
     color: rgba(6, 12, 31, 0.815);
 }
 
+.checkbox,
+.radio {
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column;  */
+    /* justify-content: space-between; */
+    }
+
 
 /*-----SUBMIT BUTTON------------ */
 button[type="submit"] {
@@ -186,7 +197,7 @@ button[type="submit"] {
     cursor: pointer;
     background-color: #52bab3;
     color: white;
-    width: 100%;
+    width: 95%;
     border-radius: 5px;
     border: none;
     margin-top: 10px; 
@@ -226,9 +237,9 @@ h5 {
         width: 100%;
     }
 
-    textarea[id="other"] {
-        width: 84%;         
-    }
+    /* textarea[id="other"] {
+        width: 90%;         
+    } */
 
     /* .secondary {
     display: flex;
@@ -261,6 +272,7 @@ h5 {
 
     button[type="submit"] {
     cursor: pointer;
+    width: 100%;
     }
     
     fieldset {
