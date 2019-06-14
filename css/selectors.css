@@ -269,16 +269,16 @@ h5 {
         justify-content: center;
     }
 
-    /* label[for="name"],
+    label[for="name"],
     label[for="mail"],
     label[for="phone"],
     label[for="address"],
     label[for="city"],
     label[for="state"],
     label[for="zip"] {
-        margin-top: 0px;
-        padding-right: 50px;
-    } */
+        margin-top: 30px;
+        /* padding-right: 50px; */
+    }
 
     .label {
         display: flex;
@@ -291,6 +291,7 @@ h5 {
         display: flex;
         flex-direction: row; 
         align-items: center;
+        /* justify-content: space-between; */
         /* margin-top: 25px; */
         
         justify-content: start;
@@ -324,11 +325,11 @@ h5 {
     input[type="text"],
 input[type="email"],
 input[id="phone"] {
-    width: 80%;
+    width: 70%;
 }
 
 select[id="state"] {
-    width: 85%;
+    width: 75%;
 }
 
     
