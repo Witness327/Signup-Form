@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 /*-----"THE CODE REVIEW"-----*/
 h2 {
@@ -22,7 +25,20 @@ h1 {
 
 
 /*-----"Get the latest news..."-----*/
-
+.h3 {
+    width:90%;   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: gray;
+    font-weight: 300;
+    padding: 0px 15px 5px;
+    margin-top: -10px;  
+    padding-bottom: 20px;
+    margin-bottom: 2px;
+    letter-spacing: 0px;
+    border-bottom:  solid 4px black;
+}
 
 
 /*-----"Contact Information"-----*/
@@ -62,23 +78,8 @@ form {
     justify-content: center;
 }
 
-.h3 {
-    width:90%;   
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    color: gray;
-    font-weight: 300;
-    padding: 0px 15px 5px;
-    margin-top: -10px;  
-    padding-bottom: 35px;
-    margin-bottom: 2px;
-    letter-spacing: 0px;
-    border-bottom:  solid 4px black;
-}
-
 .container {
-    width: 95.55%;  
+    width: 90%;  
     margin-top: 2px;
     border-top: solid 2px black;
 }
@@ -108,7 +109,7 @@ form {
 
 /*-----INPUT SECTIONS------------ */
 textarea[id="other"] {
-    width: 81%;
+    width: 95%;
     border-radius: 5px;    
     color: black;
     background: #e8eeefd3;
@@ -123,6 +124,8 @@ textarea[id="other"] {
     box-shadow:none;
     border-color:transparent;
 }
+
+
 
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -152,11 +155,11 @@ input[type="email"],
 input[type="number"],
 select {    
     display: flex;    
-    background: #e8eeefd3;
+    background: #e8eeefd3;    
+    background-color: #e8eeefd3;
     font-size: 16px;
     height: auto;
     padding: 15px;
-    background-color: #e8eeefd3;
     color: black;    
     margin-bottom: 17px;
     margin-top: 10px;
@@ -168,11 +171,12 @@ select {
 input[type="text"],
 input[type="email"],
 input[id="phone"] {
-    width: 87%;
+    width: 100%;
+    
 }
 
 select[id="state"] {
-    width: 93.5%;
+    width: 100%;
 }
 
 
@@ -229,10 +233,11 @@ button[type="submit"] {
 /* ---------COPYRIGHT---------- */
 h5 {
     margin-top: 10px;
+    margin-bottom: 200px;
     text-align: center;
     color: gray;
     font-style: italic;
-    opacity: 0.5;
+    opacity: 0.6;
     font-size: 1em;
 }
 /* ---------COPYRIGHT---------- */
@@ -263,15 +268,17 @@ label[for="zip"] {
     justify-content: space-between;
 }
 
+.label label,
+.label-zip label {
+    flex-basis: 25%;
+}
+
+.label input,
+.label select {
+    flex-basis: 75%;
+}
 .label-zip {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* text-align: flex-start;       */
-    padding-right: 10px;
-    /* align-items: flex-start;   */    
-    /* justify-content: center; */
-    
+    display: flex;    
 }
 
 .h3 {
@@ -294,9 +301,13 @@ label[for="zip"] {
     width: 100%;
 }
 
-/* textarea[id="other"] {
-    width: 93%;         
-} */
+textarea[id="other"] {
+    width: 100%;         
+}
+
+button[type="submit"] {    
+    width: 100%;
+}
     
 input[type="text"],
 input[type="email"],
