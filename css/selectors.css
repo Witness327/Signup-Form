@@ -144,10 +144,26 @@ input[type="number"]:focus,
 textarea:focus,
 select:focus {
     border: 1px solid rgb(19, 19, 112);
-    outline: none;
+    outline: none; 
+    transition-property: all, -moz-specific, sliding;    
 }
 
-
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+  }
+  input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+textarea:hover,
+select:hover {
+    background: lightskyblue;
+  } 
 
 input[id="zip"] {
     background: #e8eeefd3;
@@ -184,8 +200,7 @@ select {
 input[type="text"],
 input[type="email"],
 input[id="phone"] {
-    width: 100%;
-    
+    width: 100%;    
 }
 
 select[id="state"] {
@@ -321,21 +336,6 @@ textarea[id="other"] {
 button[type="submit"] {    
     width: 100%;
 }
-    
-/* input[type="text"],
-input[type="email"],
-input[id="phone"] {
-    width: 70%;
-}
-
-select[id="state"] {
-    width: 70%;
-} */
-
-/* button[type="submit"] {
-    cursor: pointer;
-    width: 100%;
-} */
     
 fieldset {
 width: 50%;
