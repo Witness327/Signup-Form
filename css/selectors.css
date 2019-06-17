@@ -105,6 +105,7 @@ form {
     width:100%;
 } 
 
+
 ::placeholder {
     font-style: italic;
     text-align: right;
@@ -136,8 +137,6 @@ textarea[id="other"] {
     border-color:transparent;
 }
 
-
-
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
@@ -156,14 +155,15 @@ select {
     transition-property: background;
     transition-duration: 1s;
     transition-timing-function: linear;
-  }
-  input[type="text"]:hover,
+}
+
+input[type="text"]:hover,
 input[type="email"]:hover,
 input[type="number"]:hover,
 textarea:hover,
 select:hover {
     background: lightskyblue;
-  } 
+} 
 
 input[id="zip"] {
     background: #e8eeefd3;
